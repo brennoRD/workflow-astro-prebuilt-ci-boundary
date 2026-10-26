@@ -1,0 +1,16 @@
+{
+  "name": "workflow-astro-public-ci-boundary",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "astro build"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "11.0.16",
+    "astro": "7.4.2",
+    "workflow": "5.2.3"
+  },
+  "devDependencies": {
+    "vercel": "65.2.0"
+  }
+}

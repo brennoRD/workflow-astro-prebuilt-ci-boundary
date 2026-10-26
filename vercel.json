@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/workflow-consumer.js": {
+      "experimentalTriggers": [
+        {
+          "type": "queue/v2beta",
+          "topic": "__wkf_workflow_*",
+          "retryAfterSeconds": 5,
+          "initialDelaySeconds": 0
+        }
+      ]
+    }
+  }
+}

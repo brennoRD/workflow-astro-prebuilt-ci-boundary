@@ -30,5 +30,8 @@ jobs:
       - name: Build outside Vercel
         run: npx --no-install vercel build --prod
 
+      - name: Show sanitized build layout
+        run: node scripts/show-build-layout.mjs
+
       - name: Deploy prebuilt output
         run: npx --no-install vercel deploy --prebuilt --prod
